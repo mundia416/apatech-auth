@@ -1,5 +1,5 @@
 const context = require("./context");
-const userResolvers = require("./resolvers/userResolver");
+const userResolvers = require("./resolvers/userResolvers");
 const secondaryUserResolvers = require("./resolvers/secondaryUserResolver");
 const userTypeDef = require("./typedefs/user");
 
