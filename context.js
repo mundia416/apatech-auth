@@ -1,3 +1,4 @@
+const { getPayload } = require("./utils");
 
 const context = ({ req }) => {
     // get the user token from the headers

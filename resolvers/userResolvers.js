@@ -77,11 +77,12 @@ module.exports = {
 
                 const address = email.split('@').pop()
 
+                /** 
                 if (address.toLowerCase() !== 'test.com') {
                     await context.dataSources.sendgridAPI.newContact(email.toLowerCase())
                     await context.dataSources.slackAPI.newUser(email.toLowerCase(),args.utm)
                 }
-
+*/
                 return { email, password, token }
             } catch (e) {
                 throw e

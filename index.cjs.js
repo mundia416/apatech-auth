@@ -2,7 +2,7 @@
 
 var context = require("./context");
 
-var userResolvers = require("./resolvers/userResolver");
+var userResolvers = require("./resolvers/userResolvers");
 
 var secondaryUserResolvers = require("./resolvers/secondaryUserResolver");
 

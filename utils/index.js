@@ -39,16 +39,16 @@ const comparePassword = (password, hash) => new Promise(async (resolve, reject) 
 })
 
 const getToken = payload => {
-	const token = jwt.sign(payload, process.env.SECRET/*, {
+	const token = jwt.sign(payload, 'secret' ,/*process.env.SECRET/*, {
         expiresIn: 604800, // 1 Week
 	}*/)
-	console.log({ getToken: token })
 	return token
 }
 
 const getPayload = token => {
 	try {
-		const payload = jwt.verify(token, process.env.SECRET);
+		const payload = jwt.verify(token, 'secret'//process.env.SECRET
+			);
 		return { loggedIn: true, payload };
 	} catch (err) {
 		// Add Err Message
